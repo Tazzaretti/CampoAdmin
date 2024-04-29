@@ -35,7 +35,7 @@ const NewPlanting = ({ onSubmit }) => {
 
     try {
       // Realiza la llamada al backend para agregar el planting utilizando Axios
-      const response = await axios.post('http://campoadmin.somee.com/CreatePlanting', plantingData);
+      const response = await axios.post('https://campoadmin.somee.com/CreatePlanting', plantingData);
 
       // Llama a onSubmit solo si la llamada al backend fue exitosa
       onSubmit();

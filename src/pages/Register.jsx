@@ -36,7 +36,7 @@ const Register = (onSubmit) => {
     console.log('dentro de data context')
     console.log(userData);
     try {
-      const response = await axios.post('http://campoadmin.somee.com/api/Auth/Registro', userData);
+      const response = await axios.post('https://campoadmin.somee.com/api/Auth/Registro', userData);
       successMessage('El usuario se creo con exito');
     } catch (error) {
       console.log(error)

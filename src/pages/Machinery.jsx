@@ -25,7 +25,7 @@ const Machinery = () => {
     try {
       if (isLogin) {
         const response = await axios.get(
-          `http://campoadmin.somee.com/api/Machinery/GetByUser/${user.idUser}`,
+          `https://campoadmin.somee.com/api/Machinery/GetByUser/${user.idUser}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,
@@ -44,7 +44,7 @@ const Machinery = () => {
     try {
       if (isLogin) {
         const response = await axios.delete(
-          `http://campoadmin.somee.com/api/Machinery/Delete/${machineId}`,
+          `https://campoadmin.somee.com/api/Machinery/Delete/${machineId}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,

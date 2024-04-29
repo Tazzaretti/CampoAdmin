@@ -38,7 +38,7 @@ const NewHarvest = ({ onSubmit }) => {
 
     try {
       // Realiza la llamada al backend para agregar el harvest utilizando Axios
-      const response = await axios.post('http://campoadmin.somee.com/CreateHarvest', harvestData);
+      const response = await axios.post('https://campoadmin.somee.com/CreateHarvest', harvestData);
 
       // Llama a onSubmit solo si la llamada al backend fue exitosa
       onSubmit();

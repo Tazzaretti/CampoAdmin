@@ -29,7 +29,7 @@ const EditMachine = ({ onSubmit, machine }) => {
     
       try {
         // Realiza la llamada al backend para modificar la machinery utilizando Axios
-        const response = await axios.put('http://campoadmin.somee.com/api/Machinery/Update', machineData);
+        const response = await axios.put('https://campoadmin.somee.com/api/Machinery/Update', machineData);
       
         // Llama a onSubmit solo si la llamada al backend fue exitosa
         onSubmit();

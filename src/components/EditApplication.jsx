@@ -35,7 +35,7 @@ const EditApplication = ({ onSubmit, application }) => {
     
       try {
         // Realiza la llamada al backend para agregar el plot utilizando Axios
-        const response = await axios.post('http://campoadmin.somee.com/ModifyApplication', applicationData);
+        const response = await axios.post('https://campoadmin.somee.com/ModifyApplication', applicationData);
       
         // Llama a onSubmit solo si la llamada al backend fue exitosa
         onSubmit();

@@ -13,7 +13,7 @@ export const DataProvider = ({ children }) => {
     try {
       if (isLogin) {
         const response = await axios.get(
-          `http://campoadmin.somee.com/UserPlots/${user.idUser}`,
+          `https://campoadmin.somee.com/UserPlots/${user.idUser}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,
@@ -31,7 +31,7 @@ export const DataProvider = ({ children }) => {
   const deletePlot = async (plotId) => {
     try {
       if (isLogin) {
-        await axios.delete(`http://campoadmin.somee.com/DeletePlot/${plotId}`, {
+        await axios.delete(`https://campoadmin.somee.com/DeletePlot/${plotId}`, {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },
@@ -46,7 +46,7 @@ export const DataProvider = ({ children }) => {
 
   const getPlantingsForPlot = async (plotId) => {
     try {
-      const response = await axios.get(`http://campoadmin.somee.com/PlotPlantings/${plotId}`);
+      const response = await axios.get(`https://campoadmin.somee.com/PlotPlantings/${plotId}`);
       return response.data;
     } catch (error) {
       console.error('Error al obtener siembras para el lote:', error);
@@ -56,7 +56,7 @@ export const DataProvider = ({ children }) => {
 
   const getHarvestsForPlot = async (plotId) => {
     try {
-      const response = await axios.get(`http://campoadmin.somee.com/PlotHarvests/${plotId}`);
+      const response = await axios.get(`https://campoadmin.somee.com/PlotHarvests/${plotId}`);
       return response.data;
     } catch (error) {
       console.error('Error al obtener siembras para el lote:', error);
@@ -66,7 +66,7 @@ export const DataProvider = ({ children }) => {
 
   const getApplicationsForPlot = async (plotId) => {
     try {
-      const response = await axios.get(`http://campoadmin.somee.com/PlotApplications/${plotId}`);
+      const response = await axios.get(`https://campoadmin.somee.com/PlotApplications/${plotId}`);
       return response.data;
     } catch (error) {
       console.error('Error al obtener aplicaciones para el lote:', error);
@@ -77,7 +77,7 @@ export const DataProvider = ({ children }) => {
   // Nueva función para obtener un lote por su ID
   const getPlotById = async (plotId) => {
     try {
-      const response = await axios.get(`http://campoadmin.somee.com/api/Plot/GetPlotById/${plotId}`);
+      const response = await axios.get(`https://campoadmin.somee.com/api/Plot/GetPlotById/${plotId}`);
       return response.data;
     } catch (error) {
       console.error(`Error al obtener el plot ${plotId} en DataContext:`, error);

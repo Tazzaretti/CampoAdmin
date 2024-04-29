@@ -46,7 +46,7 @@ export const AuthProvider = ({children}) => {
   const login = async (email, contrasenia) => {
     try {
       const response = await axios.post(
-        'http://campoadmin.somee.com/api/Auth/Login',
+        'https://campoadmin.somee.com/api/Auth/Login',
         {
           email,
           contrasenia

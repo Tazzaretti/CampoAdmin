@@ -35,7 +35,7 @@ const EditPlanting = ({ onSubmit, planting }) => {
     
       try {
         // Realiza la llamada al backend para agregar el plot utilizando Axios
-        const response = await axios.post('http://campoadmin.somee.com/ModifyPlanting', plantingData);
+        const response = await axios.post('https://campoadmin.somee.com/ModifyPlanting', plantingData);
       
         // Llama a onSubmit solo si la llamada al backend fue exitosa
         onSubmit();

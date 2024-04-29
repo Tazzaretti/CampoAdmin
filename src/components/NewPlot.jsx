@@ -36,7 +36,7 @@ const NewPlot = ({ onSubmit }) => {
     
       try {
         // Realiza la llamada al backend para agregar el plot utilizando Axios
-        const response = await axios.post('http://campoadmin.somee.com/CreatePlot', plotData);
+        const response = await axios.post('https://campoadmin.somee.com/CreatePlot', plotData);
       
         // Llama a onSubmit solo si la llamada al backend fue exitosa
         onSubmit();

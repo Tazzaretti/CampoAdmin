@@ -36,7 +36,7 @@ const EditHarvest = ({ onSubmit, harvest }) => {
     
       try {
         // Realiza la llamada al backend para agregar el plot utilizando Axios
-        const response = await axios.post('http://campoadmin.somee.com/ModifyHarvest', harvestData);
+        const response = await axios.post('https://campoadmin.somee.com/ModifyHarvest', harvestData);
       
         // Llama a onSubmit solo si la llamada al backend fue exitosa
         onSubmit();
