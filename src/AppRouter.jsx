@@ -12,7 +12,7 @@ import Consumes from './pages/Consumes.jsx';
 
 const AppRouter = () => {
   return (
-      <Routes>
+      <Routes basename="/CampoAdmin">
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
